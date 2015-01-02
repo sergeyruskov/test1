@@ -1,0 +1,10 @@
+{
+  "name": "tutu",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}
