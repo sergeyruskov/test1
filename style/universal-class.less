@@ -1,0 +1,63 @@
+.b-button.m-wrapper {
+  display: inline-block;
+  padding: 0 7px;
+  position: relative;
+
+  &:before,
+  &:after {
+    content          : "";
+    height           : 42px;
+    position         : absolute;
+    background-repeat: no-repeat;
+    top              : 0;
+  }
+
+  &:before {
+    background-image: url("../img/border-radius/orange/left-side.png");
+    left            : 0;
+    width           : 7px;
+  }
+
+  &:after {
+    background-image: url("../img/border-radius/orange/right-side.png");
+    right           : 0;
+    width           : 7px;
+  }
+//
+//  &:before,
+//  &:after {
+//    content          : "";
+//    display          : block;
+//    height           : 42px;
+//    background-repeat: no-repeat;
+//  }
+//
+//  &:before {
+//    float            : left;
+//    width            : 5px;
+//    background-image : url("../img/border-radius/orange/left-side.png") ;
+//  }
+//
+//  &:after {
+//    float            : right;
+//    width            : 6px;
+//    background-image : url("../img/border-radius/orange/right-side.png");
+//  }
+
+  .button {
+    padding             : 9.5px 33px 11px 33px;
+    background          : @brand-primary;
+    font                : 1.5em @second-font;
+    text-transform      : capitalize;
+    border              : none;
+    cursor              : pointer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      color: lighten(@black, 5%);
+    }
+  }
+}

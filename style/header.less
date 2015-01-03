@@ -1,0 +1,77 @@
+//todo: Логотип
+.b-header {
+  max-width: @max-width;
+  margin   : auto;
+  height   : 100%;
+  >.b-header_logo {
+    height: 100%;
+
+    &:before {
+      .vertical-align--pseudo;
+    }
+
+    h3 {
+      display       : inline-block;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color         : @white;
+      font          : 2.5em @second-font;
+
+      >span {
+        color: @brand-primary;
+      }
+    }
+
+    >span {
+      color         : @white;
+      font-size     : 1.17em;
+      text-transform: capitalize;
+      vertical-align: middle;
+    }
+  }
+}
+//todo: Навигация
+
+.main-nav {
+  float     : right;
+  height    : 100%;
+  width     : 56%;
+
+  >li {
+    height : 100%;
+    padding: 0 2%;
+    float  : left;
+
+    &#active {
+      background : darken(@black, 5%);
+      position   : relative;
+
+      &:after {
+        content    : "";
+        position   : absolute;
+        background : @brand-primary;
+        height     : 4px;
+        width      : 100%;
+        top        : 0;
+        left       : 0;
+      }
+    }
+
+    >a {
+      height         : 100%;
+      display        : block;
+      color          : @white;
+      text-align     : center;
+      text-transform : uppercase;
+      text-decoration: none;
+
+      &:visited {
+        color: darken(@white, 25%);
+      }
+
+      &:before {
+        .vertical-align--pseudo;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.vertical-align--pseudo() {
+  content       : "";
+  display       : inline-block;
+  vertical-align: middle;
+  height        : 100%;
+}
+
+.box-sizing(@type: border-box) {
+  -webkit-box-sizing: @type;
+  -moz-box-sizing:    @type;
+  box-sizing:         @type;
+}
+
+.background-clip(@type: padding-box) {
+  -moz-background-clip   : @type;
+  -webkit-background-clip: @type;
+  background-clip        : @type;
+}

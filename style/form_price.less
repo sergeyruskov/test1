@@ -44,26 +44,33 @@
         background: url("../img/sprite.png") no-repeat 100% 100%;
       }
 
-      &:before,
-      &:after {
-        content          : "";
-        height           : 42px;
-        position         : absolute;
-        background-repeat: no-repeat;
-        top              : 0;
-      }
-
-      &:before {
+      .left-border-radius {
         background-image: url("../img/border-radius/white/left-side.png");
-        left            : 0;
+//        left            : 0;
         width           : 7px;
+        float: left;
       }
 
-      &:after {
-        background-image: url("../img/border-radius/white/right-side.png");
-        right           : 0;
-        width           : 7px;
-      }
+//      &:before,
+//      &:after {
+//        content          : "";
+//        height           : 42px;
+//        position         : absolute;
+//        background-repeat: no-repeat;
+//        top              : 0;
+//      }
+//
+//      &:before {
+//        background-image: url("../img/border-radius/white/left-side.png");
+//        left            : 0;
+//        width           : 7px;
+//      }
+//
+//      &:after {
+//        background-image: url("../img/border-radius/white/right-side.png");
+//        right           : 0;
+//        width           : 7px;
+//      }
 
       >input,
       >select {
@@ -90,17 +97,20 @@
 
 .test {
 //  height: 200px;
+//  margin: 0 0 0 100px;
+
 
   .out {
     background: #f00;
 //    margin: 0 400px;
-    padding: 200px;
-//    width: 200px;
+//    padding: 200px;
+//    width: 400px;
 //    margin: 0 100px;
   }
     .in {
-      padding: 50px;
-//      margin: 0 -100px;
+//      padding: 50px;
+      width: 400px;
+      margin: 0 -100px 0 0;
 //      width: 100px;
       background: #00f;
     }

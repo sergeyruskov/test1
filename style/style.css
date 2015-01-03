@@ -209,23 +209,10 @@ ul {
   height: 13px;
   background: url("../img/sprite.png") no-repeat 100% 100%;
 }
-.b-form.m-price > label > .wrapper-label:before,
-.b-form.m-price > label > .wrapper-label:after {
-  content: "";
-  height: 42px;
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 0;
-}
-.b-form.m-price > label > .wrapper-label:before {
+.b-form.m-price > label > .wrapper-label .left-border-radius {
   background-image: url("../img/border-radius/white/left-side.png");
-  left: 0;
   width: 7px;
-}
-.b-form.m-price > label > .wrapper-label:after {
-  background-image: url("../img/border-radius/white/right-side.png");
-  right: 0;
-  width: 7px;
+  float: left;
 }
 .b-form.m-price > label > .wrapper-label > input,
 .b-form.m-price > label > .wrapper-label > select {
@@ -248,9 +235,9 @@ ul {
 }
 .test .out {
   background: #f00;
-  padding: 200px;
 }
 .test .in {
-  padding: 50px;
+  width: 400px;
+  margin: 0 -100px 0 0;
   background: #00f;
 }

@@ -7,5 +7,5 @@ $(function() {
         $(this).attr('id', 'active');
     });
 
-    //$('#arrival').selectmenu();
+    $('#arrival').selectmenu();
 });
